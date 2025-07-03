@@ -5,8 +5,8 @@ crash.log
 *.tfvars
 .terraform.lock.hcl
 .terraform/
-ECR_IAC/.terraform/
-ECR_IAC/.terraform.lock.hcl
-ECR_IAC/terraform.tfstate
-ECR_IAC/terraform.tfstate.backup
-ECR_IAC/terraform.tfvars
+EKS_IAC/.terraform/
+EKS_IAC/.terraform.lock.hcl
+EKS_IAC/terraform.tfstate
+EKS_IAC/terraform.tfstate.backup
+EKS_IAC/terraform.tfvars
