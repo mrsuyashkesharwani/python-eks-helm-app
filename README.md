@@ -153,5 +153,3 @@ terraform destroy -auto-approve
 ## Author
 
 Suyash Kesharwani
-
-the folder name is EKS\_IAC
