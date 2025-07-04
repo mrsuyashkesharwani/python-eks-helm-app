@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/app:latest
+      IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/app:v2
       CLUSTER_NAME: ${{ secrets.EKS_CLUSTER_NAME }}
       AWS_REGION: ${{ secrets.AWS_REGION }}
 
@@ -59,6 +59,6 @@ jobs:
 
     - name: Upgrade Helm release
       run: |
-        helm upgrade --install app ./HelmCharts --set image.repository=${{ secrets.DOCKER_USERNAME }}/app,image.tag=latest
+        helm upgrade --install app ./HelmCharts --set image.repository=${{ secrets.DOCKER_USERNAME }}/app,image.tag=v2
 
 
